@@ -4,7 +4,9 @@ Living, GPU-rendered wallpapers — fluid ribbons, flowing waves, rain ripples
 and breathing echo rings — as your macOS desktop background. Born from the
 R9-EQ / R9-Music fluid artwork engine.
 
-> Created by **Rhineul Islam** · free for the community · v0.1.0
+> Created by **Rhineul Islam** · free for the community · v0.5.0
+
+**Website:** https://xpro-gamer-rhine.github.io/R9-Motion-app/
 
 ## Install (one line)
 
