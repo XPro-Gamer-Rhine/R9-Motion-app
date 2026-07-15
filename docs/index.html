@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>R9 Motion — living wallpapers for macOS</title>
+<style>
+  :root { color-scheme: dark; }
+  * { margin: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         background: #06040f; color: #eef; overflow-x: hidden; }
+  .bg { position: fixed; inset: -20%; z-index: -1; filter: blur(90px); opacity: .55;
+        background:
+          radial-gradient(40% 55% at 22% 30%, #7b2ff7 0%, transparent 70%),
+          radial-gradient(45% 60% at 78% 22%, #1e6dff 0%, transparent 70%),
+          radial-gradient(35% 45% at 80% 80%, #ff6a3d 0%, transparent 70%),
+          radial-gradient(30% 40% at 25% 78%, #c03df0 0%, transparent 70%);
+        animation: drift 26s ease-in-out infinite alternate; }
+  @keyframes drift {
+    0%   { transform: translate(0,0) scale(1) rotate(0deg); }
+    50%  { transform: translate(4%, -3%) scale(1.12) rotate(3deg); }
+    100% { transform: translate(-4%, 3%) scale(1.05) rotate(-3deg); }
+  }
+  main { max-width: 860px; margin: 0 auto; padding: 72px 24px 64px; text-align: center; }
+  img.icon { width: 128px; height: 128px; border-radius: 28px;
+             box-shadow: 0 18px 60px rgba(120,60,255,.45); }
+  h1 { font-size: 44px; margin: 22px 0 6px; letter-spacing: -.5px; }
+  .tag { color: #b9b3d9; font-size: 19px; }
+  .badge { display: inline-block; margin: 18px 0 8px; padding: 6px 14px; font-size: 12px;
+           font-weight: 700; letter-spacing: 1.5px; border: 1px solid #6d5bd033;
+           border-radius: 999px; color: #cfc6ff; background: #ffffff0a; }
+  pre { margin: 26px auto; padding: 16px 20px; max-width: 640px; overflow-x: auto;
+        background: #0d0a1f; border: 1px solid #ffffff14; border-radius: 14px;
+        font-size: 13.5px; text-align: left; color: #a8ffbf; }
+  .grid { display: grid; gap: 14px; margin-top: 42px;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); text-align: left; }
+  .card { padding: 18px; background: #ffffff08; border: 1px solid #ffffff10;
+          border-radius: 16px; }
+  .card h3 { font-size: 15px; margin-bottom: 6px; }
+  .card p { font-size: 13px; color: #b9b3d9; line-height: 1.5; }
+  .patterns { margin-top: 34px; font-size: 13px; color: #cfc6ff; line-height: 2; }
+  .patterns span { padding: 3px 10px; margin: 3px; display: inline-block;
+                   background: #ffffff0a; border: 1px solid #ffffff12; border-radius: 999px; }
+  footer { margin-top: 56px; font-size: 12px; color: #776f99; }
+  a { color: #9f8bff; }
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<main>
+  <img class="icon" src="icon.png" alt="R9 Motion icon">
+  <h1>R9 Motion</h1>
+  <p class="tag">Living, GPU-rendered wallpapers for your Mac.</p>
+  <div class="badge">FREE · NATIVE · ~36 MB RAM · v0.5.0</div>
+  <pre><code>curl -fsSL https://raw.githubusercontent.com/XPro-Gamer-Rhine/R9-Motion-app/main/install.sh | bash</code></pre>
+
+  <div class="grid">
+    <div class="card"><h3>🎨 21 living patterns</h3>
+      <p>From the R9 signature Fluid to Aurora, Caustics, Liquid Chrome, Ferrofluid and Halftone — all pure Metal math, rendered at native XDR resolution.</p></div>
+    <div class="card"><h3>🖥 Every monitor, your way</h3>
+      <p>One synced look across displays or an individual wallpaper per monitor, with copy-to-all.</p></div>
+    <div class="card"><h3>🌊 Your colors</h3>
+      <p>Watery presets — Clear Water, Liquid Glass, Rain on Glass, Deep Ocean — or any three custom colors, plus speed, scale and a pattern shuffle.</p></div>
+    <div class="card"><h3>🎬 Video & GIF wallpapers</h3>
+      <p>Loop your own footage — Full Screen, Fit or Stretch per display. (Patterns stay far lighter on memory.)</p></div>
+    <div class="card"><h3>🍃 Featherweight, always on</h3>
+      <p>~36 MB memory, 2–3% CPU, pauses completely when a fullscreen app covers the desktop. The entire app is under 1 MB.</p></div>
+    <div class="card"><h3>🔄 Updates itself</h3>
+      <p>Daily release check; one click reinstalls in the background and relaunches. Install once, forever fresh.</p></div>
+  </div>
+
+  <div class="patterns">
+    <span>Fluid</span><span>Waves</span><span>Ripple</span><span>Reverb</span><span>Aurora</span><span>Plasma</span><span>Caustics</span><span>Rain</span><span>Liquid Chrome</span><span>Iridescence</span><span>Silk</span><span>Threads</span><span>Light Rays</span><span>Prismatic Burst</span><span>Ripple Grid</span><span>Ferrofluid</span><span>Smoke Flow</span><span>Orb</span><span>Mesh Drift</span><span>Warp Stripes</span><span>Halftone</span>
+  </div>
+
+  <footer>© 2026 Rhineul Islam · <a href="https://github.com/XPro-Gamer-Rhine/R9-Motion-app/releases/latest">Latest release</a> · macOS 13+</footer>
+</main>
+</body>
+</html>
